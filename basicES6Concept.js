@@ -54,3 +54,23 @@ console.log(age);
 console.log(rest);
 
 // 31-1 Module Introduction And Basic ES6 Recap
+
+/*
+    1.var,let,const
+    2.default param
+    3.template string
+    4.arrow function
+    5.destructuring
+    6.spread operator
+    7.Object.keys(),Object.values(),object.entries,freeze,seal
+    8.for of--->array,string
+    9.for in--->object
+*/
+
+const square = (x) => x*x;
+let borgo = square(5);
+console.log(borgo);
+
+const {age2,...others} = {x:2,y:5,name:'aadil',age2:2,nJoystudy:true};
+console.log(age2);
+console.log(others);
