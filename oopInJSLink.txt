@@ -1,0 +1,5 @@
+https://youtu.be/B6vSq4KiZeM?si=2Hbyoc5XaI93rIhq
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+https://www.freecodecamp.org/news/object-oriented-programming-javascript/
