@@ -236,3 +236,104 @@ console.log(typeof frndFilterLength4, frndFilterLength4);
 
 31-5 (Recap) Map, ForEach, Filter, Find, Reduce
 1.
+const number = [2, 3, 4, 5, 6, 7, 8, 10];
+const numberReduce = number.reduce((a, b) => a + b, 0);
+console.log('reduce is summm of array element', numberReduce);
+console.log(`-------------------------------`)
+
+2.
+const friends = ['abul', 'babul', 'karim', 'sokkkoirje', 'abulllye'];
+const frndReduce = friends.reduce((a, b) => a + b, ' ');
+console.log(frndReduce);
+
+console.log(`------------------------`)
+
+const frndReduce2 = friends.reduce((x, y) => x + y, 'maha');
+console.log(frndReduce2)
+
+console.log(`-------------------------------`)
+
+
+3.
+const array1 = [1, 2, 3, 4];
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+    ((updateInitialValue, currentValue) => updateInitialValue + currentValue),
+    initialValue,
+);
+
+console.log(sumWithInitial);
+// Expected output: 10
+
+console.log(`------------------`)
+
+5.
+const total = [15, 16, 17, 18, 19].reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0,
+);
+//accumulator is initialValue/equivalent uspdateInitialValue
+console.log(total)
+
+console.log(`------------------`)
+
+6.
+const objects = [{ x: 1 }, { x: 2 }, { x: 3 }];
+const sum = objects.reduce(
+    (accumulator, currentValue) => accumulator + currentValue.x,
+    0,
+);
+
+console.log(sum); // 6
+
+7.
+const products = [
+    { id: 1, nam: 'lenovo laptp', price: 25000 },
+    { id: 2, nam: 'HP laptp', price: 35000 },
+    { id: 3, nam: 'dell laptp', price: 32000 },
+    { id: 4, nam: 'macbook', price: 132000 }
+]
+
+const damOrMollo = products.map((p) => p.price);
+console.log(damOrMollo);
+
+const reduceDamOrMolloTotal = products.reduce((p1, p2) => p1 + p2.price, 0);
+console.log(reduceDamOrMolloTotal);
+
+8.
+const damForEach = products.forEach((p) => {
+    p.nam
+    console.log(p.nam)
+})
+console.log(damForEach)
+
+9.
+const filterProduct = products.filter((p) => p.price);
+console.log(filterProduct)
+
+const filterProductPrice = products.filter((p) => p.price > 30000);
+console.log(filterProductPrice)
+
+10.
+const findProduct = products.find((p) => p.price);
+console.log(findProduct)
+
+/*array te j koivabe loop chalano jai:
+1.for loop
+2.while loop
+3.for of loop
+4.for in loop(ghorie-pechie)
+5.forEach
+6.map
+7.filter
+8.find
+9.reduce
+*/
+
+
+
+
+
+31-6 (Optional) Introduction To Class And Objects
+1.
