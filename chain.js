@@ -46,5 +46,3 @@ console.log(user2)
 // console.log(user2.address.street.second)
 console.log(user2.address.street?.second) //? is optional chain
 
-
-// 31-3 Array Map To Do One Line Loop Magic
