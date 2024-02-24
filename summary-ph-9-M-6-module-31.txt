@@ -476,3 +476,11 @@ badam.lecture()
 badam.activity()
 
 //dot notation vs bracket notation
+
+
+
+31-9 Module Summary And ES6 Topics, Nested Obj.Practise Task:
+1.
+
+31-10 Advanced ES6 Concept:
+1.revise above

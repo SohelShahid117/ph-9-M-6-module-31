@@ -30,4 +30,9 @@ badam.activity()
 //dot notation vs bracket notation
 
 
-//31-9 Module Summary And ES6 Topics, Nested Obj.Practise Task
+//31-9 Module Summary And ES6 Topics, Nested Obj.Practice Task
+//common interview question about ES6 JS
+//ternary operator in JS
+
+//31-10 Advanced ES6 Concept
+//revise all
