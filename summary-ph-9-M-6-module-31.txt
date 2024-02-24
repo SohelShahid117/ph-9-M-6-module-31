@@ -447,3 +447,32 @@ https://www.freecodecamp.org/news/object-oriented-programming-javascript/
 
 31-8 (Advanced) This Keyword, Dot Notation Vs Bracket Notation
 1.
+class Teacher {
+    constructor(name, subject) {
+        // this.nam = `Sirer nam holo ${name}`
+        // this.bisoi = `Sir ${subject} kob valobabe porai`
+        this.nam = name;
+        this.biosoi = subject;
+    }
+    lecture() {
+        console.log(`${this.nam} sir is teaching Math`)
+    }
+    sleep() {
+        console.log(`${this.nam} sir aramse ghomai`)
+    }
+    activity(){
+        this.sleep();
+    }
+}
+
+const master = new Teacher('ABUL', 'BANGLA'); //new use kora hoi class k object bananor jonno
+console.log(master);
+master.sleep();
+
+const badam = new Teacher('babul mia','songit');
+console.log(badam);
+badam.sleep()
+badam.lecture()
+badam.activity()
+
+//dot notation vs bracket notation
