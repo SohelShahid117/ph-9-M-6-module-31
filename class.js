@@ -23,37 +23,20 @@ console.log(lenovo);
 lenovo.speak(`and this is good practic`);
 
 
-class Polygon {
-    constructor() {
-        this.name = "Polygon";
+class Teacher {
+    constructor(name, subject) {
+        this.nam = `Sirer nam holo ${name}`
+        this.bisoi = `Sir ${subject} kob valobabe porai`
+    }
+    lecture() {
+        console.log(`sir is teaching Math`)
     }
 }
 
-class Rectangle {
-    constructor() {
-        this.name = "Rectangle";
-    }
-}
+const master = new Teacher('ABUL', 'BANGLA');
+console.log(master);
+master.lecture()
 
-class Square extends Polygon {
-    constructor() {
-        super();
-    }
-}
-
-// Make Square extend Rectangle (which is a base class) instead of Polygon
-Object.setPrototypeOf(Square, Rectangle);
-
-// const newInstance = new Square();
-const newInstance = new Rectangle();
-
-// newInstance is still an instance of Polygon, because we didn't
-// change the prototype of Square.prototype, so the prototype chain
-// of newInstance is still
-//   newInstance --> Square.prototype --> Polygon.prototype
-console.log(newInstance instanceof Polygon); // true
-console.log(newInstance instanceof Rectangle); // false
-
-// However, because super() calls Rectangle as constructor, the name property
-// of newInstance is initialized with the logic in Rectangle
-console.log(newInstance.name); // Rectangle
+console.log(`----------------------`);
+const eunusSir = new Teacher('Eunus Sir', 'Math');
+console.log(eunusSir)
